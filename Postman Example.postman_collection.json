@@ -1,0 +1,518 @@
+{
+	"info": {
+		"_postman_id": "f715800f-f0f8-4e9c-90d5-5fc3f18fb3ba",
+		"name": "Postman Example",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST",
+			"item": [
+				{
+					"name": "Create POST",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "user-agent",
+								"value": "test_user-agent",
+								"type": "text"
+							},
+							{
+								"key": "x-amzn-trace-id",
+								"value": "test_x-amzn-trace-id",
+								"type": "text"
+							},
+							{
+								"key": "x-forwarded-proto",
+								"value": "test_x-forwarded-proto",
+								"type": "text"
+							},
+							{
+								"key": "x-forwarded-port",
+								"value": "443",
+								"type": "text"
+							},
+							{
+								"key": "host",
+								"value": "postman-echo.com",
+								"type": "text"
+							},
+							{
+								"key": "x-amzn-trace-id",
+								"value": "4a56558313e824fc4a2b3a1a",
+								"type": "text"
+							},
+							{
+								"key": "accept",
+								"value": "*/*",
+								"type": "text"
+							},
+							{
+								"key": "postman-token",
+								"value": "pm_postman-token",
+								"type": "text"
+							},
+							{
+								"key": "accept-encoding",
+								"value": "gzip, deflate, br",
+								"type": "text"
+							},
+							{
+								"key": "cookie",
+								"value": "test_cookie",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"indaam\",\n    \"hobbies\": [{\n        \"id\" : 0,\n        \"name\" : \"anything\"\n    }],\n    \"arr\" : [0, \"1\"],\n    \"_null\" : null,\n    \"_boolean\" : true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/post",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"post"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create POST",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "user-agent",
+										"value": "test_user-agent",
+										"type": "text"
+									},
+									{
+										"key": "x-amzn-trace-id",
+										"value": "test_x-amzn-trace-id",
+										"type": "text"
+									},
+									{
+										"key": "x-forwarded-proto",
+										"value": "test_x-forwarded-proto",
+										"type": "text"
+									},
+									{
+										"key": "x-forwarded-port",
+										"value": "443",
+										"type": "text"
+									},
+									{
+										"key": "host",
+										"value": "postman-echo.com",
+										"type": "text"
+									},
+									{
+										"key": "x-amzn-trace-id",
+										"value": "4a56558313e824fc4a2b3a1a",
+										"type": "text"
+									},
+									{
+										"key": "accept",
+										"value": "*/*",
+										"type": "text"
+									},
+									{
+										"key": "postman-token",
+										"value": "pm_postman-token",
+										"type": "text"
+									},
+									{
+										"key": "accept-encoding",
+										"value": "gzip, deflate, br",
+										"type": "text"
+									},
+									{
+										"key": "cookie",
+										"value": "test_cookie",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"indaam\",\n    \"hobbies\": [{\n        \"id\" : 0,\n        \"name\" : \"anything\"\n    }],\n    \"arr\" : [0, \"1\"],\n    \"_null\" : null,\n    \"_boolean\" : true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/post",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"post"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 28 Oct 2022 08:29:26 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "750"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2ee-xpn59j5zSILdB1ZTiK3iz/mXOc4\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "set-cookie",
+									"value": "sails.sid=s%3A63ON-PrF26Rs3gOS_mFP5mqiCSBZtP9b.CTp46QdIkDIeUHgZVxrIWlQxJjVvA50G3V5ea%2F%2BNjuM; Path=/; HttpOnly"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"args\": {},\n    \"data\": {\n        \"name\": \"indaam\",\n        \"hobbies\": [\n            {\n                \"id\": 0,\n                \"name\": \"anything\"\n            }\n        ],\n        \"arr\": [\n            0,\n            \"1\"\n        ],\n        \"_null\": null,\n        \"_boolean\": true\n    },\n    \"files\": {},\n    \"form\": {},\n    \"headers\": {\n        \"x-forwarded-proto\": \"https\",\n        \"x-forwarded-port\": \"443\",\n        \"host\": \"postman-echo.com\",\n        \"x-amzn-trace-id\": \"Root=1-635b92e6-21e9b25f0a037d1a03682ba0;test_x-amzn-trace-id\",\n        \"content-length\": \"161\",\n        \"user-agent\": \"test_user-agent\",\n        \"accept\": \"*/*\",\n        \"postman-token\": \"pm_postman-token\",\n        \"accept-encoding\": \"gzip, deflate, br\",\n        \"cookie\": \"test_cookie; sails.sid=s%3AMVnfAfOlU7Mz3RHsG_F8kjdFioc4HuGJ.VIN0gAUWqv%2FEnV7bEa9YKDs0Vgd9YrwJe2PZGpKpsTU\",\n        \"content-type\": \"application/json\"\n    },\n    \"json\": {\n        \"name\": \"indaam\",\n        \"hobbies\": [\n            {\n                \"id\": 0,\n                \"name\": \"anything\"\n            }\n        ],\n        \"arr\": [\n            0,\n            \"1\"\n        ],\n        \"_null\": null,\n        \"_boolean\": true\n    },\n    \"url\": \"https://postman-echo.com/post\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "GET",
+			"item": [
+				{
+					"name": "Get User Name",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-forwarded-proto",
+								"value": "https",
+								"type": "text"
+							},
+							{
+								"key": "x-forwarded-port",
+								"value": "443",
+								"type": "text"
+							},
+							{
+								"key": "host",
+								"value": "postman-echo.com",
+								"type": "text"
+							},
+							{
+								"key": "x-amzn-trace-id",
+								"value": "test_x-amzn-trace-id",
+								"type": "text"
+							},
+							{
+								"key": "user-agent",
+								"value": "PostmanRuntime/7.28.4",
+								"type": "text"
+							},
+							{
+								"key": "accept",
+								"value": "*/*",
+								"type": "text"
+							},
+							{
+								"key": "postman-token",
+								"value": "test_",
+								"type": "text"
+							},
+							{
+								"key": "accept-encoding",
+								"value": "gzip, deflate, br",
+								"type": "text"
+							},
+							{
+								"key": "cookie",
+								"value": "c_test",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{BASE_URL}}/get?id=1&name=indaam",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"get"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								},
+								{
+									"key": "name",
+									"value": "indaam"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get User Name",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-forwarded-proto",
+										"value": "https",
+										"type": "text"
+									},
+									{
+										"key": "x-forwarded-port",
+										"value": "443",
+										"type": "text"
+									},
+									{
+										"key": "host",
+										"value": "postman-echo.com",
+										"type": "text"
+									},
+									{
+										"key": "x-amzn-trace-id",
+										"value": "test_x-amzn-trace-id",
+										"type": "text"
+									},
+									{
+										"key": "user-agent",
+										"value": "PostmanRuntime/7.28.4",
+										"type": "text"
+									},
+									{
+										"key": "accept",
+										"value": "*/*",
+										"type": "text"
+									},
+									{
+										"key": "postman-token",
+										"value": "test_",
+										"type": "text"
+									},
+									{
+										"key": "accept-encoding",
+										"value": "gzip, deflate, br",
+										"type": "text"
+									},
+									{
+										"key": "cookie",
+										"value": "c_test",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{BASE_URL}}/get?id=1&name=indaam",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"get"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "1"
+										},
+										{
+											"key": "name",
+											"value": "indaam"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 28 Oct 2022 08:29:59 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "524"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"20c-FbxQIKLSj1+Ne/iUa8lLZwbkWzA\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "set-cookie",
+									"value": "sails.sid=s%3AKTnrFg87FL0kTW4rfnHsCHPq7QOSW7FL.vCX8RobwIrnXY27aszlUtXBiTkwk7nX9VwD80NvSaKE; Path=/; HttpOnly"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"args\": {\n        \"id\": \"1\",\n        \"name\": \"indaam\"\n    },\n    \"headers\": {\n        \"x-forwarded-proto\": \"https\",\n        \"x-forwarded-port\": \"443\",\n        \"host\": \"postman-echo.com\",\n        \"x-amzn-trace-id\": \"Root=1-635b9307-6a3fff080c62560569843d6b;test_x-amzn-trace-id\",\n        \"user-agent\": \"PostmanRuntime/7.28.4\",\n        \"accept\": \"*/*\",\n        \"postman-token\": \"test_\",\n        \"accept-encoding\": \"gzip, deflate, br\",\n        \"cookie\": \"c_test; sails.sid=s%3A63ON-PrF26Rs3gOS_mFP5mqiCSBZtP9b.CTp46QdIkDIeUHgZVxrIWlQxJjVvA50G3V5ea%2F%2BNjuM\",\n        \"content-type\": \"application/json\"\n    },\n    \"url\": \"https://postman-echo.com/get?id=1&name=indaam\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Get User Name No Example",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/get?id=1&name=indaam",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"get"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						},
+						{
+							"key": "name",
+							"value": "indaam"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create POST No Example",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"indaam\",\n    \"hobbies\": [{\n        \"id\" : 0,\n        \"name\" : \"coding\"\n    }],\n    \"arr\" : [0, \"1\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/post",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://postman-echo.com/get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://postman-echo.com/get",
+					"protocol": "https",
+					"host": [
+						"postman-echo",
+						"com"
+					],
+					"path": [
+						"get"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BASE_URL",
+			"value": "https://postman-echo.com"
+		}
+	]
+}

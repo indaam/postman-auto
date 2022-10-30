@@ -1,0 +1,899 @@
+{
+  "info": {
+    "_postman_id": "f715800f-f0f8-4e9c-90d5-5fc3f18fb3ba",
+    "name": "Postman Example",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "POST",
+      "item": [
+        {
+          "name": "Create POST",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "user-agent",
+                "value": "test_user-agent",
+                "type": "text"
+              },
+              {
+                "key": "x-amzn-trace-id",
+                "value": "test_x-amzn-trace-id",
+                "type": "text"
+              },
+              {
+                "key": "x-forwarded-proto",
+                "value": "test_x-forwarded-proto",
+                "type": "text"
+              },
+              {
+                "key": "x-forwarded-port",
+                "value": "443",
+                "type": "text"
+              },
+              {
+                "key": "host",
+                "value": "postman-echo.com",
+                "type": "text"
+              },
+              {
+                "key": "x-amzn-trace-id",
+                "value": "4a56558313e824fc4a2b3a1a",
+                "type": "text"
+              },
+              {
+                "key": "accept",
+                "value": "*/*",
+                "type": "text"
+              },
+              {
+                "key": "postman-token",
+                "value": "pm_postman-token",
+                "type": "text"
+              },
+              {
+                "key": "accept-encoding",
+                "value": "gzip, deflate, br",
+                "type": "text"
+              },
+              {
+                "key": "cookie",
+                "value": "test_cookie",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"indaam\",\n    \"hobbies\": [{\n        \"id\" : 0,\n        \"name\" : \"anything\"\n    }],\n    \"arr\" : [0, \"1\"],\n    \"_null\" : null,\n    \"_boolean\" : true\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BASE_URL}}/post",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "post"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Create POST",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "user-agent",
+                    "value": "test_user-agent",
+                    "type": "text"
+                  },
+                  {
+                    "key": "x-amzn-trace-id",
+                    "value": "test_x-amzn-trace-id",
+                    "type": "text"
+                  },
+                  {
+                    "key": "x-forwarded-proto",
+                    "value": "test_x-forwarded-proto",
+                    "type": "text"
+                  },
+                  {
+                    "key": "x-forwarded-port",
+                    "value": "443",
+                    "type": "text"
+                  },
+                  {
+                    "key": "host",
+                    "value": "postman-echo.com",
+                    "type": "text"
+                  },
+                  {
+                    "key": "x-amzn-trace-id",
+                    "value": "4a56558313e824fc4a2b3a1a",
+                    "type": "text"
+                  },
+                  {
+                    "key": "accept",
+                    "value": "*/*",
+                    "type": "text"
+                  },
+                  {
+                    "key": "postman-token",
+                    "value": "pm_postman-token",
+                    "type": "text"
+                  },
+                  {
+                    "key": "accept-encoding",
+                    "value": "gzip, deflate, br",
+                    "type": "text"
+                  },
+                  {
+                    "key": "cookie",
+                    "value": "test_cookie",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"name\": \"indaam\",\n    \"hobbies\": [{\n        \"id\" : 0,\n        \"name\" : \"anything\"\n    }],\n    \"arr\" : [0, \"1\"],\n    \"_null\" : null,\n    \"_boolean\" : true\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{BASE_URL}}/post",
+                  "host": [
+                    "{{BASE_URL}}"
+                  ],
+                  "path": [
+                    "post"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Fri, 28 Oct 2022 08:29:26 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "750"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"2ee-xpn59j5zSILdB1ZTiK3iz/mXOc4\""
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "set-cookie",
+                  "value": "sails.sid=s%3A63ON-PrF26Rs3gOS_mFP5mqiCSBZtP9b.CTp46QdIkDIeUHgZVxrIWlQxJjVvA50G3V5ea%2F%2BNjuM; Path=/; HttpOnly"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"args\": {},\n    \"data\": {\n        \"name\": \"indaam\",\n        \"hobbies\": [\n            {\n                \"id\": 0,\n                \"name\": \"anything\"\n            }\n        ],\n        \"arr\": [\n            0,\n            \"1\"\n        ],\n        \"_null\": null,\n        \"_boolean\": true\n    },\n    \"files\": {},\n    \"form\": {},\n    \"headers\": {\n        \"x-forwarded-proto\": \"https\",\n        \"x-forwarded-port\": \"443\",\n        \"host\": \"postman-echo.com\",\n        \"x-amzn-trace-id\": \"Root=1-635b92e6-21e9b25f0a037d1a03682ba0;test_x-amzn-trace-id\",\n        \"content-length\": \"161\",\n        \"user-agent\": \"test_user-agent\",\n        \"accept\": \"*/*\",\n        \"postman-token\": \"pm_postman-token\",\n        \"accept-encoding\": \"gzip, deflate, br\",\n        \"cookie\": \"test_cookie; sails.sid=s%3AMVnfAfOlU7Mz3RHsG_F8kjdFioc4HuGJ.VIN0gAUWqv%2FEnV7bEa9YKDs0Vgd9YrwJe2PZGpKpsTU\",\n        \"content-type\": \"application/json\"\n    },\n    \"json\": {\n        \"name\": \"indaam\",\n        \"hobbies\": [\n            {\n                \"id\": 0,\n                \"name\": \"anything\"\n            }\n        ],\n        \"arr\": [\n            0,\n            \"1\"\n        ],\n        \"_null\": null,\n        \"_boolean\": true\n    },\n    \"url\": \"https://postman-echo.com/post\"\n}"
+            }
+          ],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "/* Create POST Test Script */\n\n/* Define jsonData  */\nvar jsonData = pm.response.json();\n\npm.test(\"Status code is 200\", function () {\n  pm.response.to.have.status(200);\n});\n\npm.test(\"Content-Type is present\", function () {\n  pm.response.to.have.header(\"Content-Type\");\n});\n",
+                  "pm.test(\n  \"Should ROOT must be object and have keys 'args','data','files','form','headers','json','url' \",\n  function () {\n    pm.expect(jsonData).to.have.property(\"args\");\n    pm.expect(jsonData).to.have.property(\"data\");\n    pm.expect(jsonData).to.have.property(\"files\");\n    pm.expect(jsonData).to.have.property(\"form\");\n    pm.expect(jsonData).to.have.property(\"headers\");\n    pm.expect(jsonData).to.have.property(\"json\");\n    pm.expect(jsonData).to.have.property(\"url\");\n  }\n);\n",
+                  "pm.test(\"Should args must be object  \", function () {\n  pm.expect(jsonData.args).to.be.an(\"object\");\n});\n",
+                  "pm.test(\n  \"Should data must be object and have keys 'name','hobbies','arr','_null','_boolean' \",\n  function () {\n    pm.expect(jsonData.data).to.have.property(\"name\");\n    pm.expect(jsonData.data).to.have.property(\"hobbies\");\n    pm.expect(jsonData.data).to.have.property(\"arr\");\n    pm.expect(jsonData.data).to.have.property(\"_null\");\n    pm.expect(jsonData.data).to.have.property(\"_boolean\");\n  }\n);\n",
+                  "pm.test(\"Should data.name to be String\", function () {\n  pm.expect(jsonData.data.name).to.be.a(\"string\");\n});\n",
+                  "pm.test(\"Should data.hobbies to be Array\", function () {\n  pm.expect(jsonData.data.hobbies).to.be.a(\"array\");\n});\n",
+                  "pm.test(\"Should data.hobbies[0].id to be Number\", function () {\n  pm.expect(jsonData.data.hobbies[0].id).to.be.a(\"number\");\n});\n",
+                  "pm.test(\"Should data.hobbies[0].name to be String\", function () {\n  pm.expect(jsonData.data.hobbies[0].name).to.be.a(\"string\");\n});\n",
+                  "pm.test(\"Should data.arr to be Array\", function () {\n  pm.expect(jsonData.data.arr).to.be.a(\"array\");\n});\n",
+                  "pm.test(\"Should data.arr[0] to be Number\", function () {\n  pm.expect(jsonData.data.arr[0]).to.be.a(\"number\");\n});\n",
+                  "pm.test(\"Should data._null to be Null\", function () {\n  /* Skip test data._null because value is Null */\n});\n",
+                  "pm.test(\"Should data._boolean to be Boolean\", function () {\n  pm.expect(jsonData.data._boolean).to.be.a(\"boolean\");\n});\n",
+                  "pm.test(\"Should files must be object  \", function () {\n  pm.expect(jsonData.files).to.be.an(\"object\");\n});\n",
+                  "pm.test(\"Should form must be object  \", function () {\n  pm.expect(jsonData.form).to.be.an(\"object\");\n});\n",
+                  "pm.test(\n  \"Should headers must be object and have keys 'x-forwarded-proto','x-forwarded-port','host','x-amzn-trace-id','content-length','user-agent','accept','postman-token','accept-encoding','cookie','content-type' \",\n  function () {\n    pm.expect(jsonData.headers).to.have.property(\"x-forwarded-proto\");\n    pm.expect(jsonData.headers).to.have.property(\"x-forwarded-port\");\n    pm.expect(jsonData.headers).to.have.property(\"host\");\n    pm.expect(jsonData.headers).to.have.property(\"x-amzn-trace-id\");\n    pm.expect(jsonData.headers).to.have.property(\"content-length\");\n    pm.expect(jsonData.headers).to.have.property(\"user-agent\");\n    pm.expect(jsonData.headers).to.have.property(\"accept\");\n    pm.expect(jsonData.headers).to.have.property(\"postman-token\");\n    pm.expect(jsonData.headers).to.have.property(\"accept-encoding\");\n    pm.expect(jsonData.headers).to.have.property(\"cookie\");\n    pm.expect(jsonData.headers).to.have.property(\"content-type\");\n  }\n);\n",
+                  "pm.test(\"Should headers['x-forwarded-proto'] to be String\", function () {\n  pm.expect(jsonData.headers[\"x-forwarded-proto\"]).to.be.a(\"string\");\n});\n",
+                  "pm.test(\"Should headers['x-forwarded-port'] to be String\", function () {\n  pm.expect(jsonData.headers[\"x-forwarded-port\"]).to.be.a(\"string\");\n});\n",
+                  "pm.test(\"Should headers.host to be String\", function () {\n  pm.expect(jsonData.headers.host).to.be.a(\"string\");\n});\n",
+                  "pm.test(\"Should headers['x-amzn-trace-id'] to be String\", function () {\n  pm.expect(jsonData.headers[\"x-amzn-trace-id\"]).to.be.a(\"string\");\n});\n",
+                  "pm.test(\"Should headers['content-length'] to be String\", function () {\n  pm.expect(jsonData.headers[\"content-length\"]).to.be.a(\"string\");\n});\n",
+                  "pm.test(\"Should headers['user-agent'] to be String\", function () {\n  pm.expect(jsonData.headers[\"user-agent\"]).to.be.a(\"string\");\n});\n",
+                  "pm.test(\"Should headers.accept to be String\", function () {\n  pm.expect(jsonData.headers.accept).to.be.a(\"string\");\n});\n",
+                  "pm.test(\"Should headers['postman-token'] to be String\", function () {\n  pm.expect(jsonData.headers[\"postman-token\"]).to.be.a(\"string\");\n});\n",
+                  "pm.test(\"Should headers['accept-encoding'] to be String\", function () {\n  pm.expect(jsonData.headers[\"accept-encoding\"]).to.be.a(\"string\");\n});\n",
+                  "pm.test(\"Should headers.cookie to be String\", function () {\n  pm.expect(jsonData.headers.cookie).to.be.a(\"string\");\n});\n",
+                  "pm.test(\"Should headers['content-type'] to be String\", function () {\n  pm.expect(jsonData.headers[\"content-type\"]).to.be.a(\"string\");\n});\n",
+                  "pm.test(\n  \"Should json must be object and have keys 'name','hobbies','arr','_null','_boolean' \",\n  function () {\n    pm.expect(jsonData.json).to.have.property(\"name\");\n    pm.expect(jsonData.json).to.have.property(\"hobbies\");\n    pm.expect(jsonData.json).to.have.property(\"arr\");\n    pm.expect(jsonData.json).to.have.property(\"_null\");\n    pm.expect(jsonData.json).to.have.property(\"_boolean\");\n  }\n);\n",
+                  "pm.test(\"Should json.name to be String\", function () {\n  pm.expect(jsonData.json.name).to.be.a(\"string\");\n});\n",
+                  "pm.test(\"Should json.hobbies to be Array\", function () {\n  pm.expect(jsonData.json.hobbies).to.be.a(\"array\");\n});\n",
+                  "pm.test(\"Should json.hobbies[0].id to be Number\", function () {\n  pm.expect(jsonData.json.hobbies[0].id).to.be.a(\"number\");\n});\n",
+                  "pm.test(\"Should json.hobbies[0].name to be String\", function () {\n  pm.expect(jsonData.json.hobbies[0].name).to.be.a(\"string\");\n});\n",
+                  "pm.test(\"Should json.arr to be Array\", function () {\n  pm.expect(jsonData.json.arr).to.be.a(\"array\");\n});\n",
+                  "pm.test(\"Should json.arr[0] to be Number\", function () {\n  pm.expect(jsonData.json.arr[0]).to.be.a(\"number\");\n});\n",
+                  "pm.test(\"Should json._null to be Null\", function () {\n  /* Skip test json._null because value is Null */\n});\n",
+                  "pm.test(\"Should json._boolean to be Boolean\", function () {\n  pm.expect(jsonData.json._boolean).to.be.a(\"boolean\");\n});\n",
+                  "pm.test(\"Should url to be String\", function () {\n  pm.expect(jsonData.url).to.be.a(\"string\");\n});\n"
+                ]
+              }
+            }
+          ],
+          "test": [
+            {
+              "key": "ROOT",
+              "dataType": "Object",
+              "objectKeys": [
+                "args",
+                "data",
+                "files",
+                "form",
+                "headers",
+                "json",
+                "url"
+              ]
+            },
+            {
+              "key": "args",
+              "dataType": "Object",
+              "objectKeys": []
+            },
+            {
+              "key": "data",
+              "dataType": "Object",
+              "objectKeys": [
+                "name",
+                "hobbies",
+                "arr",
+                "_null",
+                "_boolean"
+              ]
+            },
+            {
+              "key": "data.name",
+              "dataType": "String",
+              "objectKeys": null
+            },
+            {
+              "key": "data.hobbies",
+              "dataType": "Array",
+              "objectKeys": null
+            },
+            {
+              "key": "data.hobbies[0].id",
+              "dataType": "Number",
+              "objectKeys": null
+            },
+            {
+              "key": "data.hobbies[0].name",
+              "dataType": "String",
+              "objectKeys": null
+            },
+            {
+              "key": "data.arr",
+              "dataType": "Array",
+              "objectKeys": null
+            },
+            {
+              "key": "data.arr[0]",
+              "dataType": "Number",
+              "objectKeys": null
+            },
+            {
+              "key": "data._null",
+              "dataType": "Null",
+              "objectKeys": null
+            },
+            {
+              "key": "data._boolean",
+              "dataType": "Boolean",
+              "objectKeys": null
+            },
+            {
+              "key": "files",
+              "dataType": "Object",
+              "objectKeys": []
+            },
+            {
+              "key": "form",
+              "dataType": "Object",
+              "objectKeys": []
+            },
+            {
+              "key": "headers",
+              "dataType": "Object",
+              "objectKeys": [
+                "x-forwarded-proto",
+                "x-forwarded-port",
+                "host",
+                "x-amzn-trace-id",
+                "content-length",
+                "user-agent",
+                "accept",
+                "postman-token",
+                "accept-encoding",
+                "cookie",
+                "content-type"
+              ]
+            },
+            {
+              "key": "headers.x-forwarded-proto",
+              "dataType": "String",
+              "objectKeys": null
+            },
+            {
+              "key": "headers.x-forwarded-port",
+              "dataType": "String",
+              "objectKeys": null
+            },
+            {
+              "key": "headers.host",
+              "dataType": "String",
+              "objectKeys": null
+            },
+            {
+              "key": "headers.x-amzn-trace-id",
+              "dataType": "String",
+              "objectKeys": null
+            },
+            {
+              "key": "headers.content-length",
+              "dataType": "String",
+              "objectKeys": null
+            },
+            {
+              "key": "headers.user-agent",
+              "dataType": "String",
+              "objectKeys": null
+            },
+            {
+              "key": "headers.accept",
+              "dataType": "String",
+              "objectKeys": null
+            },
+            {
+              "key": "headers.postman-token",
+              "dataType": "String",
+              "objectKeys": null
+            },
+            {
+              "key": "headers.accept-encoding",
+              "dataType": "String",
+              "objectKeys": null
+            },
+            {
+              "key": "headers.cookie",
+              "dataType": "String",
+              "objectKeys": null
+            },
+            {
+              "key": "headers.content-type",
+              "dataType": "String",
+              "objectKeys": null
+            },
+            {
+              "key": "json",
+              "dataType": "Object",
+              "objectKeys": [
+                "name",
+                "hobbies",
+                "arr",
+                "_null",
+                "_boolean"
+              ]
+            },
+            {
+              "key": "json.name",
+              "dataType": "String",
+              "objectKeys": null
+            },
+            {
+              "key": "json.hobbies",
+              "dataType": "Array",
+              "objectKeys": null
+            },
+            {
+              "key": "json.hobbies[0].id",
+              "dataType": "Number",
+              "objectKeys": null
+            },
+            {
+              "key": "json.hobbies[0].name",
+              "dataType": "String",
+              "objectKeys": null
+            },
+            {
+              "key": "json.arr",
+              "dataType": "Array",
+              "objectKeys": null
+            },
+            {
+              "key": "json.arr[0]",
+              "dataType": "Number",
+              "objectKeys": null
+            },
+            {
+              "key": "json._null",
+              "dataType": "Null",
+              "objectKeys": null
+            },
+            {
+              "key": "json._boolean",
+              "dataType": "Boolean",
+              "objectKeys": null
+            },
+            {
+              "key": "url",
+              "dataType": "String",
+              "objectKeys": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "GET",
+      "item": [
+        {
+          "name": "Get User Name",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-forwarded-proto",
+                "value": "https",
+                "type": "text"
+              },
+              {
+                "key": "x-forwarded-port",
+                "value": "443",
+                "type": "text"
+              },
+              {
+                "key": "host",
+                "value": "postman-echo.com",
+                "type": "text"
+              },
+              {
+                "key": "x-amzn-trace-id",
+                "value": "test_x-amzn-trace-id",
+                "type": "text"
+              },
+              {
+                "key": "user-agent",
+                "value": "PostmanRuntime/7.28.4",
+                "type": "text"
+              },
+              {
+                "key": "accept",
+                "value": "*/*",
+                "type": "text"
+              },
+              {
+                "key": "postman-token",
+                "value": "test_",
+                "type": "text"
+              },
+              {
+                "key": "accept-encoding",
+                "value": "gzip, deflate, br",
+                "type": "text"
+              },
+              {
+                "key": "cookie",
+                "value": "c_test",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/get?id=1&name=indaam",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "get"
+              ],
+              "query": [
+                {
+                  "key": "id",
+                  "value": "1"
+                },
+                {
+                  "key": "name",
+                  "value": "indaam"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Get User Name",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "x-forwarded-proto",
+                    "value": "https",
+                    "type": "text"
+                  },
+                  {
+                    "key": "x-forwarded-port",
+                    "value": "443",
+                    "type": "text"
+                  },
+                  {
+                    "key": "host",
+                    "value": "postman-echo.com",
+                    "type": "text"
+                  },
+                  {
+                    "key": "x-amzn-trace-id",
+                    "value": "test_x-amzn-trace-id",
+                    "type": "text"
+                  },
+                  {
+                    "key": "user-agent",
+                    "value": "PostmanRuntime/7.28.4",
+                    "type": "text"
+                  },
+                  {
+                    "key": "accept",
+                    "value": "*/*",
+                    "type": "text"
+                  },
+                  {
+                    "key": "postman-token",
+                    "value": "test_",
+                    "type": "text"
+                  },
+                  {
+                    "key": "accept-encoding",
+                    "value": "gzip, deflate, br",
+                    "type": "text"
+                  },
+                  {
+                    "key": "cookie",
+                    "value": "c_test",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{BASE_URL}}/get?id=1&name=indaam",
+                  "host": [
+                    "{{BASE_URL}}"
+                  ],
+                  "path": [
+                    "get"
+                  ],
+                  "query": [
+                    {
+                      "key": "id",
+                      "value": "1"
+                    },
+                    {
+                      "key": "name",
+                      "value": "indaam"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Fri, 28 Oct 2022 08:29:59 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "524"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"20c-FbxQIKLSj1+Ne/iUa8lLZwbkWzA\""
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "set-cookie",
+                  "value": "sails.sid=s%3AKTnrFg87FL0kTW4rfnHsCHPq7QOSW7FL.vCX8RobwIrnXY27aszlUtXBiTkwk7nX9VwD80NvSaKE; Path=/; HttpOnly"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"args\": {\n        \"id\": \"1\",\n        \"name\": \"indaam\"\n    },\n    \"headers\": {\n        \"x-forwarded-proto\": \"https\",\n        \"x-forwarded-port\": \"443\",\n        \"host\": \"postman-echo.com\",\n        \"x-amzn-trace-id\": \"Root=1-635b9307-6a3fff080c62560569843d6b;test_x-amzn-trace-id\",\n        \"user-agent\": \"PostmanRuntime/7.28.4\",\n        \"accept\": \"*/*\",\n        \"postman-token\": \"test_\",\n        \"accept-encoding\": \"gzip, deflate, br\",\n        \"cookie\": \"c_test; sails.sid=s%3A63ON-PrF26Rs3gOS_mFP5mqiCSBZtP9b.CTp46QdIkDIeUHgZVxrIWlQxJjVvA50G3V5ea%2F%2BNjuM\",\n        \"content-type\": \"application/json\"\n    },\n    \"url\": \"https://postman-echo.com/get?id=1&name=indaam\"\n}"
+            }
+          ],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "/* Get User Name Test Script */\n\n/* Define jsonData  */\nvar jsonData = pm.response.json();\n\npm.test(\"Status code is 200\", function () {\n  pm.response.to.have.status(200);\n});\n\npm.test(\"Content-Type is present\", function () {\n  pm.response.to.have.header(\"Content-Type\");\n});\n",
+                  "pm.test(\n  \"Should ROOT must be object and have keys 'args','headers','url' \",\n  function () {\n    pm.expect(jsonData).to.have.property(\"args\");\n    pm.expect(jsonData).to.have.property(\"headers\");\n    pm.expect(jsonData).to.have.property(\"url\");\n  }\n);\n",
+                  "pm.test(\"Should args must be object and have keys 'id','name' \", function () {\n  pm.expect(jsonData.args).to.have.property(\"id\");\n  pm.expect(jsonData.args).to.have.property(\"name\");\n});\n",
+                  "pm.test(\"Should args.id to be String\", function () {\n  pm.expect(jsonData.args.id).to.be.a(\"string\");\n});\n",
+                  "pm.test(\"Should args.name to be String\", function () {\n  pm.expect(jsonData.args.name).to.be.a(\"string\");\n});\n",
+                  "pm.test(\n  \"Should headers must be object and have keys 'x-forwarded-proto','x-forwarded-port','host','x-amzn-trace-id','user-agent','accept','postman-token','accept-encoding','cookie','content-type' \",\n  function () {\n    pm.expect(jsonData.headers).to.have.property(\"x-forwarded-proto\");\n    pm.expect(jsonData.headers).to.have.property(\"x-forwarded-port\");\n    pm.expect(jsonData.headers).to.have.property(\"host\");\n    pm.expect(jsonData.headers).to.have.property(\"x-amzn-trace-id\");\n    pm.expect(jsonData.headers).to.have.property(\"user-agent\");\n    pm.expect(jsonData.headers).to.have.property(\"accept\");\n    pm.expect(jsonData.headers).to.have.property(\"postman-token\");\n    pm.expect(jsonData.headers).to.have.property(\"accept-encoding\");\n    pm.expect(jsonData.headers).to.have.property(\"cookie\");\n    pm.expect(jsonData.headers).to.have.property(\"content-type\");\n  }\n);\n",
+                  "pm.test(\"Should headers['x-forwarded-proto'] to be String\", function () {\n  pm.expect(jsonData.headers[\"x-forwarded-proto\"]).to.be.a(\"string\");\n});\n",
+                  "pm.test(\"Should headers['x-forwarded-port'] to be String\", function () {\n  pm.expect(jsonData.headers[\"x-forwarded-port\"]).to.be.a(\"string\");\n});\n",
+                  "pm.test(\"Should headers.host to be String\", function () {\n  pm.expect(jsonData.headers.host).to.be.a(\"string\");\n});\n",
+                  "pm.test(\"Should headers['x-amzn-trace-id'] to be String\", function () {\n  pm.expect(jsonData.headers[\"x-amzn-trace-id\"]).to.be.a(\"string\");\n});\n",
+                  "pm.test(\"Should headers['user-agent'] to be String\", function () {\n  pm.expect(jsonData.headers[\"user-agent\"]).to.be.a(\"string\");\n});\n",
+                  "pm.test(\"Should headers.accept to be String\", function () {\n  pm.expect(jsonData.headers.accept).to.be.a(\"string\");\n});\n",
+                  "pm.test(\"Should headers['postman-token'] to be String\", function () {\n  pm.expect(jsonData.headers[\"postman-token\"]).to.be.a(\"string\");\n});\n",
+                  "pm.test(\"Should headers['accept-encoding'] to be String\", function () {\n  pm.expect(jsonData.headers[\"accept-encoding\"]).to.be.a(\"string\");\n});\n",
+                  "pm.test(\"Should headers.cookie to be String\", function () {\n  pm.expect(jsonData.headers.cookie).to.be.a(\"string\");\n});\n",
+                  "pm.test(\"Should headers['content-type'] to be String\", function () {\n  pm.expect(jsonData.headers[\"content-type\"]).to.be.a(\"string\");\n});\n",
+                  "pm.test(\"Should url to be String\", function () {\n  pm.expect(jsonData.url).to.be.a(\"string\");\n});\n"
+                ]
+              }
+            }
+          ],
+          "test": [
+            {
+              "key": "ROOT",
+              "dataType": "Object",
+              "objectKeys": [
+                "args",
+                "headers",
+                "url"
+              ]
+            },
+            {
+              "key": "args",
+              "dataType": "Object",
+              "objectKeys": [
+                "id",
+                "name"
+              ]
+            },
+            {
+              "key": "args.id",
+              "dataType": "String",
+              "objectKeys": null
+            },
+            {
+              "key": "args.name",
+              "dataType": "String",
+              "objectKeys": null
+            },
+            {
+              "key": "headers",
+              "dataType": "Object",
+              "objectKeys": [
+                "x-forwarded-proto",
+                "x-forwarded-port",
+                "host",
+                "x-amzn-trace-id",
+                "user-agent",
+                "accept",
+                "postman-token",
+                "accept-encoding",
+                "cookie",
+                "content-type"
+              ]
+            },
+            {
+              "key": "headers.x-forwarded-proto",
+              "dataType": "String",
+              "objectKeys": null
+            },
+            {
+              "key": "headers.x-forwarded-port",
+              "dataType": "String",
+              "objectKeys": null
+            },
+            {
+              "key": "headers.host",
+              "dataType": "String",
+              "objectKeys": null
+            },
+            {
+              "key": "headers.x-amzn-trace-id",
+              "dataType": "String",
+              "objectKeys": null
+            },
+            {
+              "key": "headers.user-agent",
+              "dataType": "String",
+              "objectKeys": null
+            },
+            {
+              "key": "headers.accept",
+              "dataType": "String",
+              "objectKeys": null
+            },
+            {
+              "key": "headers.postman-token",
+              "dataType": "String",
+              "objectKeys": null
+            },
+            {
+              "key": "headers.accept-encoding",
+              "dataType": "String",
+              "objectKeys": null
+            },
+            {
+              "key": "headers.cookie",
+              "dataType": "String",
+              "objectKeys": null
+            },
+            {
+              "key": "headers.content-type",
+              "dataType": "String",
+              "objectKeys": null
+            },
+            {
+              "key": "url",
+              "dataType": "String",
+              "objectKeys": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Get User Name No Example",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{BASE_URL}}/get?id=1&name=indaam",
+          "host": [
+            "{{BASE_URL}}"
+          ],
+          "path": [
+            "get"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "1"
+            },
+            {
+              "key": "name",
+              "value": "indaam"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create POST No Example",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"indaam\",\n    \"hobbies\": [{\n        \"id\" : 0,\n        \"name\" : \"coding\"\n    }],\n    \"arr\" : [0, \"1\"]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{BASE_URL}}/post",
+          "host": [
+            "{{BASE_URL}}"
+          ],
+          "path": [
+            "post"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://postman-echo.com/get",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://postman-echo.com/get",
+          "protocol": "https",
+          "host": [
+            "postman-echo",
+            "com"
+          ],
+          "path": [
+            "get"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "BASE_URL",
+      "value": "https://postman-echo.com"
+    }
+  ],
+  "created": " Auto create at Sun Oct 30 2022 \n"
+}
