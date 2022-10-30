@@ -1,0 +1,59 @@
+{
+  "name": "postman-auto",
+  "version": "1.0.0",
+  "description": "a CLI to auto generate postman collection to test script",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/indaam/postman-auto.git"
+  },
+  "bin": {
+    "pm-auto": "./bin/postman-auto.js",
+    "postman-auto": "./bin/postman-auto.js"
+  },
+  "preferGlobal": true,
+  "scripts": {
+    "test" : "mocha --reporter spec",
+    "test-coverage": "nyc --reporter=text mocha --reporter spec",
+    "prettier-format": "prettier --config .prettierrc.js 'app/**/*.js' --write",
+    "lint": "eslint app/**/*.js --ext .js",
+    "local" : "node bin/postman-auto.js Postman\\ Example.postman_collection.json"
+  },
+  "keywords": [
+    "generate",
+    "postman",
+    "auto",
+    "test",
+    "newman",
+    "postman",
+    "api",
+    "testing",
+    "ci",
+    "rest-client",
+    "rest",
+    "autotest",
+    "script",
+    "javascript",
+    "python"
+  ],
+  "author": "indaam <indaam@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=12"
+  },
+  "dependencies": {
+    "@har-sdk/postman": "2.4.4",
+    "httpsnippet": "2.0.0",
+    "lodash.get": "^4.4.2",
+    "mkdirp": "^1.0.4",
+    "prettier": "2.7.1",
+    "yargs": "^17.6.0"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "mocha": "^8.4.0",
+    "nyc": "^15.1.0"
+  }
+}
